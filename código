@@ -1,0 +1,29 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+return (
+<View style={styles.container}>
+    <Text style={[styles.textRight ,{fontWeight: 'bold', color:'blue', fontSize: 30}]}>Stefany Beariz Alves</Text>
+    <Text style={{fontStyle: 'italic', fontSize: 25, borderBottomWidth: 2 , borderBottomColor: 'black', marginBottom:30 }}>32</Text>
+    <Text style={[styles.textCenter ,{backgroundColor: 'pink', fontSize: 20}]}>7</Text>
+    <Text style={[styles.textos, {backgroundColor: 'yellow', fontSize: 40 ,  borderBottomWidth: 2 , borderBottomColor: 'red', marginBottom:30 }]}>Novo Elemento</Text>
+</View>
+);
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  textCenter: {
+    textAlign: 'center' ,
+  },
+  textRight: {
+    textAlign: 'right' ,
+  },
+  textos:{
+    textAlign:'center',
+  }
+});
